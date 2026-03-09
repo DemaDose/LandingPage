@@ -35,6 +35,7 @@ const Footer = () => {
           <div className="footer-column">
             <h3 className="footer-heading">Read More</h3>
             <ul className="footer-links">
+              <li><Link to="/blog">Blog</Link></li>
               <li><Link to="/careers">Careers</Link></li>
               <li><Link to="/terms">Terms of Service</Link></li>
               <li><Link to="/privacy">Privacy Policy</Link></li>

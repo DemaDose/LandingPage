@@ -13,6 +13,7 @@ import EarlyAccess from './pages/EarlyAccess'
 import Careers from './pages/Careers'
 import Privacy from './pages/Privacy'
 import Terms from './pages/Terms'
+import Blog from './pages/Blog'
 
 function LandingPage() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path="/careers" element={<Careers />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </Router>
   )
