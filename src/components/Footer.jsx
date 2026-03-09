@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import logo from '../assets/LogoNoBG.png';
 import contactUnderline from '../assets/ContactUnderline.png';
@@ -34,6 +35,7 @@ const Footer = () => {
           <div className="footer-column">
             <h3 className="footer-heading">Read More</h3>
             <ul className="footer-links">
+              <li><Link to="/careers">Careers</Link></li>
               <li><a href="#terms">Terms</a></li>
               <li><a href="#privacy">Privacy</a></li>
             </ul>
@@ -42,7 +44,7 @@ const Footer = () => {
           <div className="footer-column">
             <h3 className="footer-heading">Contact Us</h3>
             <div className="contact-info">
-              <p>bussniss.lamero@gmail.com</p>
+              <p>business.lamero@gmail.com</p>
             </div>
           </div>
           
