@@ -1,0 +1,137 @@
+.terms-main {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 1px;
+}
+
+.terms-article {
+  background-color: #171B26;
+  padding: 6rem 2rem 4rem;
+  min-height: 100vh;
+}
+
+.terms-container {
+  max-width: 52rem;
+  margin: 0 auto;
+}
+
+.terms-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.terms-effective {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.terms-intro {
+  font-size: 1.0625rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.terms-section {
+  margin-top: 2.5rem;
+}
+
+.terms-section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #EDA551;
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+
+.terms-section h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.terms-section p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.65;
+  margin-bottom: 0.75rem;
+}
+
+.terms-section ul {
+  margin: 0.5rem 0 1rem 1.5rem;
+  padding: 0;
+  list-style: disc;
+}
+
+.terms-section li {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 0.35rem;
+}
+
+.terms-contact {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(237, 165, 81, 0.25);
+}
+
+.terms-contact-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.terms-contact-list li {
+  margin-bottom: 0.5rem;
+}
+
+.terms-section a {
+  color: #EDA551;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.terms-section a:hover {
+  color: #f0b85c;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .terms-article {
+    padding: 5rem 1.25rem 3rem;
+  }
+
+  .terms-title {
+    font-size: 2rem;
+  }
+
+  .terms-effective {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  .terms-section h2 {
+    font-size: 1.35rem;
+  }
+
+  .terms-section h3 {
+    font-size: 1.0625rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms-title {
+    font-size: 1.75rem;
+  }
+
+  .terms-section h2 {
+    font-size: 1.2rem;
+  }
+}

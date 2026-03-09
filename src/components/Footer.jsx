@@ -36,7 +36,7 @@ const Footer = () => {
             <h3 className="footer-heading">Read More</h3>
             <ul className="footer-links">
               <li><Link to="/careers">Careers</Link></li>
-              <li><a href="#terms">Terms</a></li>
+              <li><Link to="/terms">Terms of Service</Link></li>
               <li><Link to="/privacy">Privacy Policy</Link></li>
             </ul>
           </div>
