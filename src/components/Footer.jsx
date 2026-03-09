@@ -1,19 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Footer.css';
 import logo from '../assets/LogoNoBG.png';
 import contactUnderline from '../assets/ContactUnderline.png';
 
 const Footer = () => {
+  const location = useLocation();
+  const isBlogPage = location.pathname === '/blog';
+
   return (
     <>
-      <section className="contact-section" id="contact">
-        <div className="contact-container">
-          <h2 className="contact-title">Contact us</h2>
-          <img src={contactUnderline} alt="" className="title-underline-img" />
-        </div>
-      </section>
-      
+      {!isBlogPage && (
+        <section className="contact-section" id="contact">
+          <div className="contact-container">
+            <h2 className="contact-title">Contact us</h2>
+            <img src={contactUnderline} alt="" className="title-underline-img" />
+          </div>
+        </section>
+      )}
+
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-column">
@@ -33,7 +38,7 @@ const Footer = () => {
           </div>
           
           <div className="footer-column">
-            <h3 className="footer-heading">Read More</h3>
+            <h3 className="footer-heading">Resources</h3>
             <ul className="footer-links">
               <li><Link to="/blog">Blog</Link></li>
               <li><Link to="/careers">Careers</Link></li>
