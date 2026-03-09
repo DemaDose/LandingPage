@@ -37,7 +37,7 @@ const Footer = () => {
             <ul className="footer-links">
               <li><Link to="/careers">Careers</Link></li>
               <li><a href="#terms">Terms</a></li>
-              <li><a href="#privacy">Privacy</a></li>
+              <li><Link to="/privacy">Privacy Policy</Link></li>
             </ul>
           </div>
           
@@ -52,7 +52,7 @@ const Footer = () => {
             <div className="footer-logo-circle">
               <img src={logo} alt="DemaDose Logo" className="footer-logo-img" />
             </div>
-            <p className="copyright-text">All rights reserved DemaDose © 2025</p>
+            <p className="copyright-text">© 2026 DemaDose. All rights reserved.</p>
           </div>
         </div>
       </footer>

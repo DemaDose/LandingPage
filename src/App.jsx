@@ -10,6 +10,7 @@ import CustomizeSection from './components/CustomizeSection'
 import Footer from './components/Footer'
 import EarlyAccess from './pages/EarlyAccess'
 import Careers from './pages/Careers'
+import Privacy from './pages/Privacy'
 
 function LandingPage() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/early-access" element={<EarlyAccess />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/privacy" element={<Privacy />} />
       </Routes>
     </Router>
   )
