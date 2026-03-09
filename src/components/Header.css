@@ -110,6 +110,36 @@
   padding-bottom: 1em;
 }
 
+/* Clickable dropdown item (e.g. App Publish → Blog) */
+.dropdown-item-link {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  margin: -0.5rem -0.75rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item-link:hover {
+  background-color: rgba(237, 165, 81, 0.12);
+}
+
+.dropdown-item-link-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.dropdown-item-link .dropdown-title-link {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.dropdown-item-link-icon {
+  color: #EDA551;
+  flex-shrink: 0;
+}
+
 .dropdown-main-title {
   color: #EDA551;
   font-size: 1.5rem;

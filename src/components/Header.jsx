@@ -38,8 +38,6 @@ const Header = () => {
         
         <nav className="nav">
           <Link to="/early-access" className="nav-link">Early Access</Link>
-          <Link to="/blog" className="nav-link">Blog</Link>
-          <Link to="/careers" className="nav-link">Careers</Link>
           <div className="nav-dropdown">
             <span className="nav-link">Solutions</span>
             <div className="dropdown-menu">
@@ -62,10 +60,17 @@ const Header = () => {
                 </div>
               </div>
               <div className="dropdown-section dropdown-center">
-                <div className="dropdown-item">
-                  <h4 className="dropdown-title">App Publish</h4>
+                <Link to="/blog" className="dropdown-item dropdown-item-link">
+                  <span className="dropdown-item-link-title-row">
+                    <h4 className="dropdown-title dropdown-title-link">App Publish</h4>
+                    <svg className="dropdown-item-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                  </span>
                   <p className="dropdown-text">Publish your app on Google Play and App Store with no extra charges.</p>
-                </div>
+                </Link>
                 <div className="dropdown-item">
                   <h4 className="dropdown-title">Marketing Tools</h4>
                   <p className="dropdown-text">Promote your business and reach more customers.</p>
@@ -96,6 +101,7 @@ const Header = () => {
               </div>
             </div>
           </div>
+          <Link to="/careers" className="nav-link">Careers</Link>
           <a href="#contact" onClick={handleContactClick} className="nav-link">Contact Us</a>
         </nav>
         
