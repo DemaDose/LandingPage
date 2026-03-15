@@ -1,1 +1,2 @@
+# SPA fallback: serve index.html with 200 for all routes (for Netlify)
 /*    /index.html   200
