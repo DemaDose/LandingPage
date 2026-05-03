@@ -164,6 +164,13 @@
   font-size: 0.875rem;
   margin: 0;
   text-align: left;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.copyright-text:hover {
+  color: white;
+  padding-left: 0.5rem;
 }
 
 /* Landscape - All devices (phones, tablets, iPads) */

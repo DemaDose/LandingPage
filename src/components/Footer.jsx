@@ -42,25 +42,25 @@ const Footer = () => {
             <ul className="footer-links">
               <li><Link to="/blog">Blog</Link></li>
               <li><Link to="/careers">Careers</Link></li>
-              <li><Link to="/terms">Terms of Service</Link></li>
+            </ul>
+          </div>
+
+          <div className="footer-column">
+            <h3 className="footer-heading">Legal</h3>
+            <ul className="footer-links">
               <li><Link to="/privacy">Privacy Policy</Link></li>
+              <li><Link to="/terms">Terms of Service</Link></li>
             </ul>
           </div>
           
           <div className="footer-column">
             <h3 className="footer-heading">Contact Us</h3>
             <div className="contact-info">
-              <p>business.lamero@gmail.com</p>
+              <p>demadose.business@gmail.com</p>
             </div>
-          </div>
-          
-          <div className="footer-logo">
-            <div className="footer-logo-circle">
-              <img src={logo} alt="DemaDose Logo" className="footer-logo-img" />
-            </div>
-            <p className="copyright-text">© 2026 DemaDose. All rights reserved.</p>
           </div>
         </div>
+        <p className="copyright-text">© 2026 DemaDose. All rights reserved.</p>
       </footer>
     </>
   );

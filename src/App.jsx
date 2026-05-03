@@ -1,5 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import './App.css'
 import ScrollToTop from './components/ScrollToTop'
 import Header from './components/Header'
@@ -34,6 +36,8 @@ function LandingPage() {
 function App() {
   return (
     <Router>
+      <Analytics />
+      <SpeedInsights />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<LandingPage />} />
