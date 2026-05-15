@@ -19,15 +19,6 @@ export const JOB_LISTINGS = [
     postedAt:'2026-03-13',
   },
   {
-    id:'ui-ux-design-intern',
-    title:'UI/UX Design Intern',
-    subtitle:'Summer 2026',
-    description:'Design real product features, expand a mobile platform to web, and work directly with a founding startup team.',
-    department:'Design',
-    url:'https://broken-fridge-6e8.notion.site/3181394907b78146b570ecf0e594aa1a?pvs=105',
-    postedAt:'2026-03-13',
-  },
-  {
     id:'content-creator', 
     title:'Content Creator',
     subtitle:'Summer 2026',
