@@ -10,284 +10,65 @@
 }
 
 .customize-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: white;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   line-height: 1.3;
 }
 
 .customize-subtitle {
   font-size: 1.125rem;
   color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 4rem;
+  margin: 0 auto 3.5rem;
+  max-width: 40rem;
   line-height: 1.6;
 }
 
-.phone-mockup-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-  position: relative;
-}
-
-.pointer {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.pointer-left {
-  flex-direction: row-reverse;
-  align-self: center;
-  z-index: 100; /* Ensure it appears above phone mockup */
-  position: relative;
-}
-
-.editing-text-image {
-  width: auto;
-  height: 7.5rem;
-  object-fit: contain;
-  cursor: pointer;
-  transform-origin: center;
-  z-index: 100; /* Stay above phone mockup during animation */
-  position: relative;
-}
-
-.pointer-right {
-  align-self: center;
-}
-
-.change-color-image {
-  width: auto;
-  height: 7.5rem;
-  object-fit: contain;
-  cursor: pointer;
-  transform-origin: center;
-}
-
-.pointer-label {
-  background: #EDA551;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 1.5625rem;
-  font-weight: 600;
-  white-space: nowrap;
-  box-shadow: 0 0.3125rem 1.25rem rgba(237, 165, 81, 0.4);
-}
-
-.pointer-arrow {
-  width: 2.5rem;
-  height: auto;
-  object-fit: contain;
-}
-
-.pointer-left .pointer-arrow {
-  transform: rotate(0deg);
-}
-
-.pointer-right .pointer-arrow {
-  transform: rotate(180deg);
-}
-
-.phone-wrapper {
-  position: relative;
-  width: 26.75rem;
-  height: 57.875rem;
-}
-
-.phone-mockup {
-  width: 26.75rem;
-  height: 57.875rem;
-  border-radius: 3.5rem;
-  box-shadow: 0 1.875rem 3.75rem rgba(0, 0, 0, 0.4);
-  display: block;
-  border: 1rem solid #000000;
-  box-sizing: border-box;
-  overflow: hidden;
-  background: #FFFFFF;
-}
-
-.status-bar-overlay {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: calc(100% - 2rem);
-  height: auto;
-  pointer-events: none;
-  z-index: 10;
-}
-
-.phone-screen {
-  background-color: #ffffff;
-  border-radius: 2.5rem;
-  padding: 0 1.5rem 1.5rem 1.5rem;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.status-bar {
-  width: 100%;
-  height: auto;
-  margin-bottom: 1.5rem;
-  display: block;
-  margin-top: 0;
-  padding-top: 0.5rem;
-}
-
-.screen-header {
-  margin-bottom: 2rem;
-}
-
-.screen-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #171B26;
-  text-align: left;
-}
-
-.payment-form {
-  text-align: left;
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
-  display: block;
-  font-size: 0.875rem;
-  color: #64748b;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-}
-
-.form-group input {
-  width: 100%;
-  padding: 0.875rem;
-  border: 0.0625rem solid #e2e8f0;
-  border-radius: 0.75rem;
-  font-size: 1rem;
-  background-color: #f8fafc;
-  color: #171B26;
-}
-
-.form-row {
+.design-options-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+  text-align: left;
 }
 
-.payment-summary {
-  background-color: #f8fafc;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  margin: 1.5rem 0;
+.design-option {
+  margin: 0;
+  background: rgba(255, 255, 255, 0.04);
+  border: 0.0625rem solid rgba(237, 165, 81, 0.2);
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
-.summary-row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.75rem;
-  color: #64748b;
-  font-size: 0.95rem;
-}
-
-.summary-row.total {
-  font-weight: 700;
-  color: #171B26;
-  font-size: 1.125rem;
-  padding-top: 0.75rem;
-  border-top: 0.125rem solid #e2e8f0;
-  margin-top: 0.75rem;
-}
-
-.payment-btn {
+.design-option-image {
+  display: block;
   width: 100%;
-  padding: 1rem;
-  background: #171B26;
+  height: 16rem;
+  object-fit: cover;
+  object-position: top;
+}
+
+.design-option figcaption {
+  padding: 1.25rem;
+}
+
+.design-option-title {
+  font-size: 1.05rem;
+  font-weight: 700;
   color: white;
-  border: none;
-  border-radius: 0.75rem;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  margin-top: 1rem;
+  margin: 0 0 0.4rem;
 }
 
-@media (max-width: 1024px) and (orientation: landscape) {
-  .phone-mockup-container {
-    gap: 2rem;
-  }
-  
-  .pointer-label {
-    font-size: 0.875rem;
-    padding: 0.5rem 1rem;
-  }
-  
-  .pointer-arrow {
-    width: 1.875rem;
-    height: 1.875rem;
-  }
+.design-option-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
 }
 
-/* Tablet Portrait - Use Mobile Layout */
-@media (max-width: 1024px) and (orientation: portrait) {
-  .customize-section {
-    padding: 4rem 1rem;
-  }
-  
-  .customize-title {
-    font-size: 2rem;
-  }
-  
-  .customize-subtitle {
-    font-size: 1rem;
-  }
-  
-  .phone-mockup-container {
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-  }
-  
-  .pointer {
-    flex-direction: row !important;
-    order: 2;
-  }
-  
-  .pointer-left {
-    order: 1;
-  }
-  
-  .pointer-right {
-    order: 3;
-  }
-  
-  .phone-wrapper {
-    order: 2;
-    width: 20rem;
-    height: 43.3125rem;
-  }
-  
-  .phone-mockup {
-    width: 20rem;
-    height: 43.3125rem;
-  }
-  
-  .status-bar-overlay {
-    width: calc(100% - 1.5rem);
-    top: 0.75rem;
-    right: 0.75rem;
-  }
-  
-  .editing-text-image,
-  .change-color-image {
-    height: 5rem;
+@media (max-width: 1024px) {
+  .design-options-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -295,54 +76,21 @@
   .customize-section {
     padding: 4rem 1rem;
   }
-  
+
   .customize-title {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
-  
+
   .customize-subtitle {
     font-size: 1rem;
+    margin-bottom: 2.5rem;
   }
-  
-  .phone-mockup-container {
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
+
+  .design-options-grid {
+    grid-template-columns: 1fr;
   }
-  
-  .pointer {
-    flex-direction: row !important;
-    order: 2;
-  }
-  
-  .pointer-left {
-    order: 1;
-  }
-  
-  .pointer-right {
-    order: 3;
-  }
-  
-  .phone-wrapper {
-    order: 2;
-    width: 20rem;
-    height: 43.3125rem;
-  }
-  
-  .phone-mockup {
-    width: 20rem;
-    height: 43.3125rem;
-  }
-  
-  .status-bar-overlay {
-    width: calc(100% - 1.5rem);
-    top: 0.75rem;
-    right: 0.75rem;
-  }
-  
-  .editing-text-image,
-  .change-color-image {
-    height: 5rem;
+
+  .design-option-image {
+    height: 14rem;
   }
 }
-
