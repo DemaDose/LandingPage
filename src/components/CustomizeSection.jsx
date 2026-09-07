@@ -1,9 +1,9 @@
 import React from 'react';
 import './CustomizeSection.css';
-import homeScreen from '../assets/templates/Home.png';
-import menuScreen from '../assets/templates/Menu 1.png';
-import welcomeScreen from '../assets/templates/Welcome.png';
-import orderingScreen from '../assets/templates/iPhone 16 Pro Max - 1.png';
+import homeScreen from '../assets/templates/mobile-app-home-screen.png';
+import menuScreen from '../assets/templates/mobile-app-menu-screen.png';
+import welcomeScreen from '../assets/templates/mobile-app-welcome-screen.png';
+import orderingScreen from '../assets/templates/mobile-app-ordering-screen.png';
 
 // Static design examples. Replaces the old framer-motion "wrapper" animation
 // (auto-clicking through colors/text) with a plain, static layout - copy stays
