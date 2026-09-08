@@ -85,6 +85,20 @@ const Footer = () => {
             <h3 className="footer-heading">Contact Us</h3>
             <div className="contact-info">
               <p><a href="mailto:demadose.business@gmail.com">demadose.business@gmail.com</a></p>
+              <a
+                href="https://www.producthunt.com/products/demadose?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-demadose-2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="producthunt-badge-link"
+              >
+                <img
+                  src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1233200&theme=light"
+                  alt="DemaDose - Featured on Product Hunt"
+                  width="250"
+                  height="54"
+                  loading="lazy"
+                />
+              </a>
             </div>
           </div>
         </div>

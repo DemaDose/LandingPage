@@ -197,6 +197,19 @@
   text-decoration: underline;
 }
 
+.producthunt-badge-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  width: 100%;
+  max-width: 250px;
+}
+
+.producthunt-badge-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .contact-btn {
   padding: 0.75rem 2rem;
   background-color: white;
