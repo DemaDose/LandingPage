@@ -8,6 +8,7 @@ const Footer = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const isBlogPage = location.pathname === '/blog';
+  const isHomePage = location.pathname === '/';
 
   const handleSectionLink = (id) => (e) => goToSection(navigate, location.pathname, id, e);
 
@@ -36,8 +37,11 @@ const Footer = () => {
         </section>
       )}
 
-      {!isBlogPage && (
-        <section className="contact-section" id="contact">
+      {/* This graphic "Contact us" block is redundant with the Final CTA above it
+          on the homepage, so it's hidden there - it still shows on every other
+          page (Careers, Privacy, Terms, etc). */}
+      {!isBlogPage && !isHomePage && (
+        <section className="contact-section">
           <div className="contact-container">
             <h2 className="contact-title">Contact us</h2>
             <img src={contactUnderline} alt="" className="title-underline-img" />
@@ -81,7 +85,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="footer-column">
+          <div className="footer-column" id="contact">
             <h3 className="footer-heading">Contact Us</h3>
             <div className="contact-info">
               <p><a href="mailto:demadose.business@gmail.com">demadose.business@gmail.com</a></p>

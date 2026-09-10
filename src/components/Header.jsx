@@ -8,7 +8,6 @@ import { goToSection } from '../utils/sectionLink';
 // home first if needed); `to` links are real routes.
 const NAV_LINKS = [
   { label: 'Solutions', sectionId: 'solutions' },
-  { label: 'Why DemaDose?', sectionId: 'benefits' },
   // TODO: no standalone Pricing section spec exists yet - this links to the
   // "How much does DemaDose cost?" FAQ answer until a dedicated section is defined.
   { label: 'Pricing', sectionId: 'pricing' },

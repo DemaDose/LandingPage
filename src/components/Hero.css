@@ -41,6 +41,13 @@
   background-color: #EDA551;
 }
 
+.hero-tagline {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #EDA551;
+  margin-bottom: 1.25rem;
+}
+
 .hero-subtitle {
   font-size: 1.125rem;
   color: rgba(255, 255, 255, 0.8);

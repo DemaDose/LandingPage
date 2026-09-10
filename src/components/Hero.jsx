@@ -36,6 +36,7 @@ const Hero = () => {
 
       <div className="hero-content">
         <h1 className="hero-title">Build a Mobile App for Your Ecommerce or Food &amp; Beverage Business</h1>
+        <p className="hero-tagline">One click closer to loyal customers</p>
         <p className="hero-subtitle">
           Connect directly with your customers, increase loyalty, and drive more repeat purchases - without the cost and complexity of traditional app development.
         </p>
