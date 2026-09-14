@@ -4,7 +4,7 @@ import './FAQ.css';
 const FAQ_ITEMS = [
   {
     q: 'What is DemaDose?',
-    a: 'Think of DemaDose as "Shopify, but for building a loyalty app". We let small e-commerce and restaurant businesses launch their own mobile app, no developers, no code so they can build a direct relationship with their customers instead of renting that relationship from a marketplace.',
+    a: 'Think of DemaDose as “Shopify, but for building a loyalty app”. We let small e-commerce and restaurant businesses launch their own mobile app, no developers, no code so they can build a direct relationship with their customers instead of renting that relationship from a marketplace.',
   },
   {
     q: 'How does DemaDose work?',
