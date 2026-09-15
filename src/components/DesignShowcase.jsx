@@ -1,32 +1,34 @@
 import React from 'react';
 import './DesignShowcase.css';
-import home from '../assets/templates/mobile-app-home-screen.png';
-import home1 from '../assets/templates/Home (1).png';
-import menu1 from '../assets/templates/mobile-app-menu-screen.png';
-import menu4 from '../assets/templates/Menu 4.png';
-import welcome from '../assets/templates/mobile-app-welcome-screen.png';
-import welcome1 from '../assets/templates/Welcome (1).png';
-import welcome2 from '../assets/templates/Welcome (2).png';
-import welcome3 from '../assets/templates/Welcome (3).png';
-import welcome4 from '../assets/templates/Welcome (4).png';
-import welcome5 from '../assets/templates/Welcome (5).png';
-import iphone1 from '../assets/templates/mobile-app-ordering-screen.png';
-import iphone5 from '../assets/templates/iPhone 16 Pro Max - 5.png';
+import pancakeHome from '../assets/templates/mobile-app-home-screen.png';
+import coffeeHome from '../assets/templates/coffee-shop-home-screen.png';
+import sushiMenu from '../assets/templates/mobile-app-menu-screen.png';
+import sushiMenuDark from '../assets/templates/restaurant-menu-screen-dark.png';
+import cafeWelcome from '../assets/templates/mobile-app-welcome-screen.png';
+import restaurantWelcome from '../assets/templates/restaurant-welcome-screen.png';
+import cafeWelcomeOrange from '../assets/templates/cafe-welcome-screen-orange.png';
+import cafeWelcomePurple from '../assets/templates/cafe-welcome-screen-purple.png';
+import cafeWelcomePink from '../assets/templates/cafe-welcome-screen-pink.png';
+import cafeWelcomeGold from '../assets/templates/cafe-welcome-screen-gold.png';
+import deliveryHome from '../assets/templates/mobile-app-ordering-screen.png';
+import deliverySplash from '../assets/templates/food-delivery-splash-screen.png';
 
 const DesignShowcase = () => {
+  // `alt` describes what each screen actually shows - the old labels ("Home 1",
+  // "Welcome 3") were the vague naming the SEO doc asks us to avoid.
   const baseTemplates = [
-    { name: 'Home', logo: home },
-    { name: 'Home 1', logo: home1 },
-    { name: 'Menu 1', logo: menu1 },
-    { name: 'Menu 4', logo: menu4 },
-    { name: 'Welcome', logo: welcome },
-    { name: 'Welcome 1', logo: welcome1 },
-    { name: 'Welcome 2', logo: welcome2 },
-    { name: 'Welcome 3', logo: welcome3 },
-    { name: 'Welcome 4', logo: welcome4 },
-    { name: 'Welcome 5', logo: welcome5 },
-    { name: 'iPhone 1', logo: iphone1 },
-    { name: 'iPhone 5', logo: iphone5 }
+    { alt: 'Pancake shop app home screen with featured items and categories', logo: pancakeHome },
+    { alt: 'Coffee shop app home screen with a cappuccino menu and prices', logo: coffeeHome },
+    { alt: 'Restaurant app menu screen listing sushi rolls with ratings', logo: sushiMenu },
+    { alt: 'Restaurant app menu screen in a dark theme listing sushi rolls', logo: sushiMenuDark },
+    { alt: 'Cafe app welcome screen with a pink and green gradient', logo: cafeWelcome },
+    { alt: 'Restaurant app welcome screen with reserve and order buttons', logo: restaurantWelcome },
+    { alt: 'Cafe app welcome screen with an orange gradient', logo: cafeWelcomeOrange },
+    { alt: 'Cafe app welcome screen with a purple gradient', logo: cafeWelcomePurple },
+    { alt: 'Cafe app welcome screen with a pink gradient', logo: cafeWelcomePink },
+    { alt: 'Cafe app welcome screen with a gold gradient', logo: cafeWelcomeGold },
+    { alt: 'Food delivery app home screen with delivery and takeout options', logo: deliveryHome },
+    { alt: 'Food delivery app splash screen with the brand name', logo: deliverySplash }
   ];
 
   // Function to shuffle array
@@ -73,15 +75,16 @@ const DesignShowcase = () => {
               <div className="templates-group">
                 {sliderTemplates[carouselIndex].map((template, index) => (
                   <div key={`c${carouselIndex}-group1-${index}`} className="template-item">
-                    <img src={template.logo} alt={template.name} className="template-logo" />
+                    <img src={template.logo} alt={template.alt} className="template-logo" loading="lazy" />
                   </div>
                 ))}
               </div>
-              {/* Duplicate group for seamless loop */}
+              {/* Duplicate group for seamless loop. Decorative: alt is empty so
+                  the same descriptions aren't repeated to crawlers. */}
               <div aria-hidden="true" className="templates-group">
                 {sliderTemplates[carouselIndex].map((template, index) => (
                   <div key={`c${carouselIndex}-group2-${index}`} className="template-item">
-                    <img src={template.logo} alt={template.name} className="template-logo" />
+                    <img src={template.logo} alt="" className="template-logo" loading="lazy" />
                   </div>
                 ))}
               </div>

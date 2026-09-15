@@ -313,7 +313,7 @@ const CustomizeSection = () => {
           <div className="pointer pointer-left">
             <MotionImg 
               src={editingText} 
-              alt="Editing Text" 
+              alt="Cursor editing the app's text"
               className="editing-text-image"
               variants={editingTextVariants}
               animate={
@@ -334,13 +334,14 @@ const CustomizeSection = () => {
                 restaurantName={restaurantName}
               />
             </div>
-            <img src={statusBar} alt="Status Bar" className="status-bar-overlay" />
+            {/* Decorative phone chrome - conveys nothing to a reader. */}
+            <img src={statusBar} alt="" className="status-bar-overlay" />
           </div>
           
           <div className="pointer pointer-right">
             <MotionImg 
               src={changeColor} 
-              alt="Change Color" 
+              alt="Cursor changing the app's colour theme" 
               className="change-color-image"
               variants={changeColorVariants}
               animate={
