@@ -9,10 +9,25 @@ const __dirname = path.dirname(__filename);
 // Images rendered on the homepage. Keeping this list explicit (rather than
 // globbing src/assets) so the script never touches an asset by accident.
 const TARGETS = [
+  // App Design & Customization grid
   '../src/assets/templates/mobile-app-home-screen.png',
   '../src/assets/templates/mobile-app-menu-screen.png',
   '../src/assets/templates/mobile-app-ordering-screen.png',
   '../src/assets/templates/mobile-app-welcome-screen.png',
+  // DesignShowcase carousels
+  '../src/assets/templates/Home (1).png',
+  '../src/assets/templates/Menu 4.png',
+  '../src/assets/templates/Welcome (1).png',
+  '../src/assets/templates/Welcome (2).png',
+  '../src/assets/templates/Welcome (3).png',
+  '../src/assets/templates/Welcome (4).png',
+  '../src/assets/templates/Welcome (5).png',
+  '../src/assets/templates/iPhone 16 Pro Max - 5.png',
+  // Customize section phone mockup
+  '../src/assets/pancakewelcome.png',
+  '../src/assets/ChangeColor.png',
+  '../src/assets/EditingText.png',
+  '../src/assets/StatusBar.png',
 ];
 
 // These screenshots were exported straight from the design tool with no
