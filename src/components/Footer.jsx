@@ -4,6 +4,8 @@ import './Footer.css';
 import contactUnderline from '../assets/ContactUnderline.png';
 import { goToSection } from '../utils/sectionLink';
 
+const CONTACT_EMAIL = 'demadose.business@gmail.com';
+
 const Footer = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -20,9 +22,11 @@ const Footer = () => {
             <h2 className="final-cta-title">Ready to Build Your Business App?</h2>
             <div className="final-cta-buttons">
               <Link to="/early-access" className="final-cta-btn final-cta-btn-primary">Get started</Link>
+              {/* mailto rather than #contact: this button sits directly above the
+                  footer, so scrolling to the contact column moved the page by
+                  almost nothing and read as a dead link. */}
               <a
-                href="#contact"
-                onClick={handleSectionLink('contact')}
+                href={`mailto:${CONTACT_EMAIL}`}
                 className="final-cta-btn final-cta-btn-secondary"
               >
                 Contact Us
@@ -88,7 +92,7 @@ const Footer = () => {
           <div className="footer-column" id="contact">
             <h3 className="footer-heading">Contact Us</h3>
             <div className="contact-info">
-              <p><a href="mailto:demadose.business@gmail.com">demadose.business@gmail.com</a></p>
+              <p><a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></p>
               <a
                 href="https://www.producthunt.com/products/demadose?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-demadose-2"
                 target="_blank"
