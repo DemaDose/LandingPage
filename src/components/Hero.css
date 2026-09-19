@@ -41,11 +41,13 @@
   background-color: #EDA551;
 }
 
+/* Sits above the H1 as an eyebrow, per the SEO doc - plain text, no cursor or
+   logo graphics like the original headline had. */
 .hero-tagline {
   font-size: 1.1rem;
   font-weight: 600;
   color: #EDA551;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 
 .hero-subtitle {
