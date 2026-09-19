@@ -53,6 +53,12 @@
   color: #EDA551;
 }
 
+.blog-published-date {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+
 .blog-subtitle {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.65);
@@ -60,6 +66,19 @@
   max-width: 620px;
   margin: 0 auto;
   font-weight: 400;
+}
+
+.blog-not-found {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 9rem 24px 6rem;
+  text-align: center;
+  color: #fff;
+}
+
+.blog-not-found p {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 12px 0 28px;
 }
 
 /* ─── Stat cards ─── */
