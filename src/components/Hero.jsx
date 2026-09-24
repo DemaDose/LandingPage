@@ -41,12 +41,6 @@ const Hero = () => {
             a heading: the doc requires the H1 to be the "Build a Mobile App..."
             line below, and there can only be one H1 on the page. The cursor and
             logo are decorative - the words are already in the text. */}
-        <div className="hero-display" aria-hidden="false">
-          <span className="hero-display-line">
-            One <span className="click-wrapper">click<img src={heroCursor} alt="" className="hero-cursor" /></span> closer <img src={heroLogo} alt="" className="hero-logo-inline" /> to
-          </span>
-          <span className="hero-display-line">loyal <span className="highlight-text">customers</span></span>
-        </div>
 
         <h1 className="hero-title">Build a Mobile App for Your Ecommerce or Food &amp; Beverage Business</h1>
         <p className="hero-subtitle">
@@ -67,6 +61,12 @@ const Hero = () => {
         <p className="hero-text">
           Brands with their own app grow loyalty by 39%
         </p>
+        <div className="hero-display" aria-hidden="false">
+          <span className="hero-display-line">
+            One <span className="click-wrapper">click<img src={heroCursor} alt="" className="hero-cursor" /></span> closer <img src={heroLogo} alt="" className="hero-logo-inline" /> to
+          </span>
+          <span className="hero-display-line">loyal <span className="highlight-text">customers</span></span>
+        </div>
       </div>
     </section>
   );

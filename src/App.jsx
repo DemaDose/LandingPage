@@ -9,7 +9,6 @@ import Hero from './components/Hero'
 import Solutions from './components/Solutions'
 import WhoItsFor from './components/WhoItsFor'
 import Benefits from './components/Benefits'
-import DesignShowcase from './components/DesignShowcase'
 import CustomizeSection from './components/CustomizeSection'
 import FAQ from './components/FAQ'
 import Footer from './components/Footer'
@@ -33,7 +32,6 @@ function LandingPage() {
         <Solutions />
         <WhoItsFor />
         <Benefits />
-        <DesignShowcase />
         <CustomizeSection />
         <FAQ />
         <Footer />

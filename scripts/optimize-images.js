@@ -9,20 +9,6 @@ const __dirname = path.dirname(__filename);
 // Images rendered on the homepage. Keeping this list explicit (rather than
 // globbing src/assets) so the script never touches an asset by accident.
 const TARGETS = [
-  // App Design & Customization grid
-  '../src/assets/templates/mobile-app-home-screen.png',
-  '../src/assets/templates/mobile-app-menu-screen.png',
-  '../src/assets/templates/mobile-app-ordering-screen.png',
-  '../src/assets/templates/mobile-app-welcome-screen.png',
-  // DesignShowcase carousels
-  '../src/assets/templates/coffee-shop-home-screen.png',
-  '../src/assets/templates/restaurant-menu-screen-dark.png',
-  '../src/assets/templates/restaurant-welcome-screen.png',
-  '../src/assets/templates/cafe-welcome-screen-orange.png',
-  '../src/assets/templates/cafe-welcome-screen-purple.png',
-  '../src/assets/templates/cafe-welcome-screen-pink.png',
-  '../src/assets/templates/cafe-welcome-screen-gold.png',
-  '../src/assets/templates/food-delivery-splash-screen.png',
   // Customize section phone mockup
   '../src/assets/pancakewelcome.png',
   '../src/assets/ChangeColor.png',
