@@ -1,117 +1,101 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Header.css';
 import logo from '../assets/LogoNoBG.png';
+import { goToSection } from '../utils/sectionLink';
+
+// Top-level nav links. `sectionId` links scroll to a homepage section (navigating
+// home first if needed); `to` links are real routes.
+const NAV_LINKS = [
+  { label: 'Solutions', sectionId: 'solutions' },
+  // TODO: no standalone Pricing section spec exists yet - this links to the
+  // "How much does DemaDose cost?" FAQ answer until a dedicated section is defined.
+  { label: 'Pricing', sectionId: 'pricing' },
+  { label: 'FAQ', sectionId: 'faq' },
+  { label: 'Blog', to: '/blog' },
+  { label: 'Careers', to: '/careers' },
+  { label: 'Contact Us', sectionId: 'contact' },
+];
 
 const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleContactClick = (e) => {
-    e.preventDefault();
-    
-    // If we're not on the home page, navigate there first
-    if (location.pathname !== '/') {
-      navigate('/');
-      // Wait for navigation, then scroll
-      setTimeout(() => {
-        const element = document.getElementById('contact');
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    } else {
-      // Already on home page, just scroll
-      const element = document.getElementById('contact');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+  // Lock background scroll while the mobile menu is open.
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [menuOpen]);
+
+  const handleSectionLink = (e, id) => {
+    setMenuOpen(false);
+    goToSection(navigate, location.pathname, id, e);
+  };
+
+  const renderNavLink = (link, className) => {
+    if (link.to) {
+      return (
+        <Link key={link.label} to={link.to} className={className} onClick={() => setMenuOpen(false)}>
+          {link.label}
+        </Link>
+      );
     }
+    return (
+      <a
+        key={link.label}
+        href={`#${link.sectionId}`}
+        className={className}
+        onClick={(e) => handleSectionLink(e, link.sectionId)}
+      >
+        {link.label}
+      </a>
+    );
   };
 
   return (
     <header className="header">
       <div className="header-container">
-        <Link to="/" className="logo">
+        <Link to="/" className="logo" onClick={() => setMenuOpen(false)}>
           <img src={logo} alt="DemaDose Logo" className="logo-icon" />
         </Link>
-        
-        <nav className="nav">
-          <Link to="/early-access" className="nav-link">Early Access</Link>
-          <div className="nav-dropdown">
-            <span className="nav-link">Solutions</span>
-            <div className="dropdown-menu">
-              <div className="dropdown-section dropdown-left">
-                <div className="dropdown-item">
-                  <h4 className="dropdown-title">Payment Solution</h4>
-                  <p className="dropdown-text">Accept and manage payments online easily.</p>
-                </div>
-                <div className="dropdown-item">
-                  <h4 className="dropdown-title">App Analytics</h4>
-                  <p className="dropdown-text">Get reports with useful data and insights.</p>
-                </div>
-                <div className="dropdown-item">
-                  <h4 className="dropdown-title">Mobile App</h4>
-                  <p className="dropdown-text">Run your business anytime from your phone.</p>
-                </div>
-                <div className="dropdown-item">
-                  <h4 className="dropdown-title">Business Health</h4>
-                  <p className="dropdown-text">Get weekly business tips to help you grow.</p>
-                </div>
-              </div>
-              <div className="dropdown-section dropdown-center">
-                <Link to="/blog" className="dropdown-item dropdown-item-link">
-                  <span className="dropdown-item-link-title-row">
-                    <h4 className="dropdown-title dropdown-title-link">App Publish</h4>
-                    <svg className="dropdown-item-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                      <polyline points="15 3 21 3 21 9" />
-                      <line x1="10" y1="14" x2="21" y2="3" />
-                    </svg>
-                  </span>
-                  <p className="dropdown-text">Publish your app on Google Play and App Store with no extra charges.</p>
-                </Link>
-                <div className="dropdown-item">
-                  <h4 className="dropdown-title">Marketing Tools</h4>
-                  <p className="dropdown-text">Promote your business and reach more customers.</p>
-                </div>
-                <div className="dropdown-item">
-                  <h4 className="dropdown-title">App templates</h4>
-                  <p className="dropdown-text">Choose from 10+ website templates.</p>
-                </div>
-                <div className="dropdown-item">
-                  <h4 className="dropdown-title">Loyal Customers</h4>
-                  <p className="dropdown-text">Increase your customer loyalty and get more purchases by up to 39%</p>
-                </div>
-              </div>
-              <div className="dropdown-section dropdown-right">
-                <h3 className="dropdown-main-title">Who Is It For</h3>
-                <div className="dropdown-item">
-                  <h4 className="dropdown-title">ECommerce</h4>
-                  <p className="dropdown-text">For online stores that want to increase customer loyalty and encourage repeat purchases.</p>
-                </div>
-                <div className="dropdown-item">
-                  <h4 className="dropdown-title">Food & Beverage</h4>
-                  <p className="dropdown-text">For restaurants and cafés to manage orders and keep customers coming back.</p>
-                </div>
-                <div className="dropdown-item">
-                  <h4 className="dropdown-title">Supermarkets</h4>
-                  <p className="dropdown-text">For markets that want to go digital and make shopping easier.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <Link to="/careers" className="nav-link">Careers</Link>
-          <a href="#contact" onClick={handleContactClick} className="nav-link">Contact Us</a>
+
+        <nav className="nav" aria-label="Primary">
+          {NAV_LINKS.map((link) => renderNavLink(link, 'nav-link'))}
+          <Link to="/early-access" className="nav-cta">Get Started</Link>
         </nav>
-        
-        <div className="globe-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" stroke="#EDA551" strokeWidth="2"/>
-            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="#EDA551" strokeWidth="2"/>
-          </svg>
+
+        <div className="header-actions">
+          <div className="globe-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="#EDA551" strokeWidth="2"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="#EDA551" strokeWidth="2"/>
+            </svg>
+          </div>
+
+          <button
+            type="button"
+            className={`hamburger ${menuOpen ? 'open' : ''}`}
+            aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-nav"
+            onClick={() => setMenuOpen((open) => !open)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
+
+      {/* Mobile hamburger menu */}
+      <div className={`mobile-nav-backdrop ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(false)} aria-hidden="true"></div>
+      <nav id="mobile-nav" className={`mobile-nav ${menuOpen ? 'open' : ''}`} aria-label="Mobile">
+        {NAV_LINKS.map((link) => renderNavLink(link, 'mobile-nav-link'))}
+        <Link to="/early-access" className="mobile-nav-cta" onClick={() => setMenuOpen(false)}>Get Started</Link>
+      </nav>
     </header>
   );
 };

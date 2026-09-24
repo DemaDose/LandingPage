@@ -6,6 +6,10 @@ import statusBar from '../assets/StatusBar.png';
 import changeColor from '../assets/ChangeColor.png';
 import editingText from '../assets/EditingText.png';
 
+// Plain identifier (rather than `motion.img`) so eslint's no-unused-vars
+// correctly tracks its usage in JSX - same pattern as Hero.jsx/Benefits.jsx.
+const MotionImg = motion.img;
+
 const CustomizeSection = () => {
   // Color palettes for different themes
   const palettes = [
@@ -307,9 +311,9 @@ const CustomizeSection = () => {
         
         <div className="phone-mockup-container">
           <div className="pointer pointer-left">
-            <motion.img 
+            <MotionImg 
               src={editingText} 
-              alt="Editing Text" 
+              alt="Cursor editing the app's text"
               className="editing-text-image"
               variants={editingTextVariants}
               animate={
@@ -330,13 +334,14 @@ const CustomizeSection = () => {
                 restaurantName={restaurantName}
               />
             </div>
-            <img src={statusBar} alt="Status Bar" className="status-bar-overlay" />
+            {/* Decorative phone chrome - conveys nothing to a reader. */}
+            <img src={statusBar} alt="" className="status-bar-overlay" />
           </div>
           
           <div className="pointer pointer-right">
-            <motion.img 
+            <MotionImg 
               src={changeColor} 
-              alt="Change Color" 
+              alt="Cursor changing the app's colour theme" 
               className="change-color-image"
               variants={changeColorVariants}
               animate={
