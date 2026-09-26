@@ -4,7 +4,7 @@
 // wired up by slug in BlogPost.jsx. Everything the shell needs generically -
 // hero, table of contents, FAQ (rendered and emitted as FAQPage schema) and
 // per-page meta tags - is data here, so the shell is the same for every post.
-export const BLOG_POSTS = [
+const POSTS = [
   {
     slug: 'best-no-code-ai-app-builders',
     title: '10 Best No-Code AI App Builders in 2026',
@@ -173,6 +173,10 @@ export const BLOG_POSTS = [
     ],
   },
 ];
+
+// Newest first, derived from publishedAt rather than however POSTS happens to
+// be ordered - so adding a post in the wrong place can't reorder the index.
+export const BLOG_POSTS = [...POSTS].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 
 export function getPostBySlug(slug) {
   return BLOG_POSTS.find((post) => post.slug === slug);
