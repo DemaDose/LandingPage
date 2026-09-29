@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Footer.css';
-import contactUnderline from '../assets/ContactUnderline.png';
 import { goToSection } from '../utils/sectionLink';
 
 const CONTACT_EMAIL = 'demadose.business@gmail.com';
@@ -10,7 +9,6 @@ const Footer = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const isBlogPage = location.pathname === '/blog';
-  const isHomePage = location.pathname === '/';
 
   const handleSectionLink = (id) => (e) => goToSection(navigate, location.pathname, id, e);
 
@@ -37,18 +35,6 @@ const Footer = () => {
               <span aria-hidden="true"> · </span>
               <a href="#faq" onClick={handleSectionLink('faq')}>Read our FAQ</a>
             </p>
-          </div>
-        </section>
-      )}
-
-      {/* This graphic "Contact us" block is redundant with the Final CTA above it
-          on the homepage, so it's hidden there - it still shows on every other
-          page (Careers, Privacy, Terms, etc). */}
-      {!isBlogPage && !isHomePage && (
-        <section className="contact-section">
-          <div className="contact-container">
-            <h2 className="contact-title">Contact us</h2>
-            <img src={contactUnderline} alt="" className="title-underline-img" />
           </div>
         </section>
       )}

@@ -777,3 +777,37 @@
     padding: 56px 20px;
   }
 }
+
+/* Small line under a CTA button, e.g. "Join now and enjoy the 0% commission
+   structure". Sits inside .blog-mid-cta after the button. */
+.blog-cta-subtext {
+  margin: 1rem 0 0;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* Closing author credit under the FAQ on posts that carry a byline. */
+.blog-author-bio {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 0.0625rem solid rgba(237, 165, 81, 0.2);
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Inline links inside article prose. */
+.blog-article p a,
+.blog-article li a,
+.blog-dark-card a {
+  color: #EDA551;
+  text-decoration: underline;
+  text-underline-offset: 0.1875rem;
+}
+
+.blog-article p a:hover,
+.blog-article li a:hover,
+.blog-dark-card a:hover {
+  color: #f0b85c;
+}
