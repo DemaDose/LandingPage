@@ -172,6 +172,57 @@ const POSTS = [
       },
     ],
   },
+  {
+    slug: 'how-to-get-customers-on-slow-days-restaurant',
+    title: 'How Do You Get Customers on Slow Days in Dubai?',
+    titleHighlight: 'Slow Days in Dubai',
+    tag: 'Restaurant Marketing',
+    author: 'DemaDose Marketing Team',
+    excerpt:
+      'Instagram posts get buried by the algorithm and nobody walks in. Here is how UAE restaurants fill empty tables in minutes with instant push alerts instead.',
+    subtitle:
+      'Every restaurant owner in Dubai knows the feeling of an empty dining room on a slow afternoon. Here is why social media cannot fix it, and how UAE restaurants fill their tables in just five minutes instead.',
+    publishedAt: '2026-10-13',
+    metaTitle: 'How to Get Customers on Slow Days: UAE Restaurant Guide',
+    faqId: 's5',
+    metaDescription:
+      'Struggling with quiet weekday afternoons in your Dubai cafe? Learn how to fill empty tables using instant push alerts and a direct ordering app.',
+    stats: [
+      { num: '0%', title: 'Commission on Orders', desc: 'Keep 100% of what customers pay when they order through your own app.' },
+      { num: 'Free', title: 'Push Notifications', desc: 'Alert nearby customers the instant your tables go empty, at no extra cost.' },
+      { num: '$10', title: 'Per Month', desc: 'Launch a branded ordering & loyalty app without writing a single line of code.' },
+    ],
+    toc: [
+      { id: 's1', label: 'The Slow Afternoon Problem' },
+      { id: 's2', label: "Why Can't Instagram Save a Slow Day?" },
+      { id: 's3', label: 'The Secret: Instant Push Alerts' },
+      { id: 's4', label: 'Get Your App for $10/Month' },
+      { id: 's5', label: 'FAQ' },
+      { id: 's6', label: 'The Bottom Line' },
+    ],
+    faq: [
+      {
+        q: "Why doesn't posting on Instagram fill my restaurant during slow hours?",
+        a: "Instagram's algorithm decides who sees your posts and when, so a photo posted during a slow afternoon might not reach your followers until hours later. You have no control over timing or reach, which makes it unreliable for filling empty tables right now.",
+      },
+      {
+        q: 'What is a push notification and how does it help my restaurant?',
+        a: "A push notification is an instant message sent directly to a customer's phone home screen from your own restaurant app. Unlike social media posts, you control exactly when it is seen, so you can send a Happy Hour alert the moment your dining room goes quiet and expect customers to see it within minutes.",
+      },
+      {
+        q: 'How much does it cost to launch my own restaurant app with push notifications?',
+        a: 'With DemaDose, you can launch your own branded restaurant app for $10 a month (about AED 37). You pick a ready-made template, add your logo, and your app is ready, no developers and no code required.',
+      },
+      {
+        q: 'Does DemaDose take a commission on orders placed through my app?',
+        a: 'No. DemaDose takes 0% commission. When customers order through your app, you keep 100% of the money instead of giving up 15-30% to third-party delivery platforms.',
+      },
+      {
+        q: 'Can I publish my restaurant app on the Apple App Store and Google Play?',
+        a: 'Your app can launch on Android now through Google Play. You will need a Google Developer account, which DemaDose will help you set up. iOS support is coming later.',
+      },
+    ],
+  },
 ];
 
 // Newest first, derived from publishedAt rather than however POSTS happens to

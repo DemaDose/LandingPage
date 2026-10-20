@@ -7,6 +7,7 @@ import { getPostBySlug, formatPublishedDate } from '../data/blogPosts';
 import IncreaseCustomerLoyalty from './posts/IncreaseCustomerLoyalty';
 import DemaDoseVsGlide from './posts/DemaDoseVsGlide';
 import BestNoCodeAiAppBuilders from './posts/BestNoCodeAiAppBuilders';
+import SlowDaysRestaurant from './posts/SlowDaysRestaurant';
 
 // Each post's prose lives in its own component; everything else on the page is
 // driven by that post's entry in src/data/blogPosts.js.
@@ -14,6 +15,7 @@ const POST_BODIES = {
   'increase-customer-loyalty-ecommerce': IncreaseCustomerLoyalty,
   'demadose-vs-glide': DemaDoseVsGlide,
   'best-no-code-ai-app-builders': BestNoCodeAiAppBuilders,
+  'how-to-get-customers-on-slow-days-restaurant': SlowDaysRestaurant,
 };
 
 const AUTHOR_BIO =
