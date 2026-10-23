@@ -223,6 +223,56 @@ const POSTS = [
       },
     ],
   },
+  {
+    slug: 'best-restaurant-loyalty-program-uae',
+    title: 'How Do You Turn Your Regular Diners into Loyal Customers?',
+    titleHighlight: 'Loyal Customers',
+    tag: 'Restaurant Marketing',
+    author: 'DemaDose Marketing Team',
+    excerpt:
+      'Paper punch cards get lost, forgotten, and thrown away. Here is how a digital loyalty app turns one-time diners into weekly regulars instead.',
+    subtitle:
+      'Getting a new person to try your Dubai cafe is hard work and expensive. The real challenge is making sure they come back every single week. Here is why old loyalty tricks fail and how you can turn casual diners into regulars today.',
+    publishedAt: '2026-10-14',
+    metaTitle: 'Best Restaurant Loyalty Program UAE: Turn Guests into Regulars',
+    faqId: 's4',
+    metaDescription:
+      'Paper punch cards lose money. Learn how to launch a digital restaurant loyalty program in the UAE to turn one time diners into weekly regulars.',
+    stats: [
+      { num: '0%', title: 'Commission on Orders', desc: 'Keep 100% of every order your regulars place through your own app.' },
+      { num: '3 Sec', title: 'Reorder Time', desc: 'Returning customers rebuy their favorite order with a single tap and Apple Pay.' },
+      { num: '$10', title: 'Per Month', desc: 'Launch a branded loyalty & ordering app without writing a single line of code.' },
+    ],
+    toc: [
+      { id: 's1', label: 'Why Paper Punch Cards Lose You Money' },
+      { id: 's2', label: 'How a Loyalty App Turns Diners into Regulars' },
+      { id: 's3', label: 'Launch Your Own Loyalty App for $10/Month' },
+      { id: 's4', label: 'FAQ' },
+      { id: 's5', label: 'The Bottom Line' },
+    ],
+    faq: [
+      {
+        q: 'Why do paper punch cards fail at building restaurant loyalty?',
+        a: 'Paper cards get lost in cars, left at home, or thrown out by mistake. They also give you zero information about your guest, no name, no phone number, so if a regular stops coming in, a piece of paper cannot remind them to come back.',
+      },
+      {
+        q: 'How does a mobile loyalty app keep customers coming back?',
+        a: 'A loyalty app keeps reward points on the one thing people never leave home without, their phone. It also remembers a customer\'s favorite order so they can reorder in seconds, and lets you send a free push alert to anyone who has not visited in a while.',
+      },
+      {
+        q: 'How much does it cost to launch a restaurant loyalty app with DemaDose?',
+        a: 'With DemaDose, you can launch your own ordering and loyalty app for $10 a month (about AED 37). You pick a ready-made design, add your logo and food photos, and you do not need to know how to code.',
+      },
+      {
+        q: 'Does DemaDose take a commission on orders from loyal customers?',
+        a: 'No. DemaDose takes 0% commission. Unlike big delivery apps that take up to 30% of your sales, you keep 100% of the money your regulars spend through your app.',
+      },
+      {
+        q: 'Can I automatically remind customers who haven\'t ordered in a while?',
+        a: 'Yes. If a regular diner has not visited in a couple of weeks, you can send a free push alert straight to their phone screen, like a "We miss you" offer with double points, instead of just hoping they remember you.',
+      },
+    ],
+  },
 ];
 
 // Newest first, derived from publishedAt rather than however POSTS happens to

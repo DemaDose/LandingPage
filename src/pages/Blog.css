@@ -68,6 +68,16 @@
   font-weight: 400;
 }
 
+.blog-hero-image {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 32px auto 0;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.35);
+}
+
 .blog-not-found {
   max-width: 480px;
   margin: 0 auto;
