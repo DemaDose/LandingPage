@@ -71,11 +71,35 @@
 .blog-hero-image {
   display: block;
   width: 100%;
-  max-width: 320px;
   height: auto;
   margin: 32px auto 0;
-  border-radius: 1.5rem;
   box-shadow: 0 20px 48px rgba(0, 0, 0, 0.35);
+}
+
+/* Square brand mark, kept small so it reads as an icon rather than a banner. */
+.blog-hero-image--logo {
+  max-width: 140px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  border-radius: 28%;
+}
+
+/* Tall app screenshot (402x874), sized like a phone screen. */
+.blog-hero-image--phone {
+  max-width: 220px;
+  aspect-ratio: 402 / 874;
+  object-fit: contain;
+  border-radius: 1.75rem;
+}
+
+@media (max-width: 600px) {
+  .blog-hero-image--logo {
+    max-width: 112px;
+  }
+
+  .blog-hero-image--phone {
+    max-width: 180px;
+  }
 }
 
 .blog-not-found {

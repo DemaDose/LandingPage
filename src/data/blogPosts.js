@@ -4,6 +4,7 @@
 // wired up by slug in BlogPost.jsx. Everything the shell needs generically -
 // hero, table of contents, FAQ (rendered and emitted as FAQPage schema) and
 // per-page meta tags - is data here, so the shell is the same for every post.
+
 const POSTS = [
   {
     slug: 'best-no-code-ai-app-builders',
@@ -65,8 +66,8 @@ const POSTS = [
   },
   {
     slug: 'demadose-vs-glide',
-    title: 'DemaDose vs. Glide: Best No Code App Builder in 2026?',
-    titleHighlight: 'Best No Code App Builder',
+    title: 'Best Glide Alternative for Restaurants & Food Brands in 2026: DemaDose Vs. Glide',
+    titleHighlight: 'Best Glide Alternative',
     tag: 'Tool Comparison',
     author: 'DemaDose Marketing Team',
     excerpt:

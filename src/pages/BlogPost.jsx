@@ -9,8 +9,8 @@ import DemaDoseVsGlide from './posts/DemaDoseVsGlide';
 import BestNoCodeAiAppBuilders from './posts/BestNoCodeAiAppBuilders';
 import SlowDaysRestaurant from './posts/SlowDaysRestaurant';
 import RestaurantLoyaltyApp from './posts/RestaurantLoyaltyApp';
-import demaDoseLogoTile from '../assets/DemaDoseLogoTile.png';
-import pancafeAppHero from '../assets/PancafeAppHero.png';
+import demaDoseLogoMark from '../assets/DemaDoseLogoMark.png';
+import pancafeWelcome from '../assets/PancafeWelcome.webp';
 
 // Each post's prose lives in its own component; everything else on the page is
 // driven by that post's entry in src/data/blogPosts.js.
@@ -22,10 +22,11 @@ const POST_BODIES = {
   'best-restaurant-loyalty-program-uae': RestaurantLoyaltyApp,
 };
 
-// Optional featured image shown under the hero header, per post.
+// Optional featured image shown under the hero header, per post. `variant`
+// picks a size/shape modifier in Blog.css so each image keeps its own ratio.
 const HERO_IMAGES = {
-  'how-to-get-customers-on-slow-days-restaurant': { src: demaDoseLogoTile, alt: 'DemaDose app logo' },
-  'best-restaurant-loyalty-program-uae': { src: pancafeAppHero, alt: 'Pancafé loyalty app welcome screen' },
+  'how-to-get-customers-on-slow-days-restaurant': { src: demaDoseLogoMark, alt: 'DemaDose app logo', variant: 'logo' },
+  'best-restaurant-loyalty-program-uae': { src: pancafeWelcome, alt: 'Pancafé loyalty app welcome screen', variant: 'phone' },
 };
 
 const AUTHOR_BIO =
@@ -132,7 +133,11 @@ const BlogPost = () => {
           </p>
           <p className="blog-subtitle">{post.subtitle}</p>
           {heroImage && (
-            <img src={heroImage.src} alt={heroImage.alt} className="blog-hero-image" />
+            <img
+              src={heroImage.src}
+              alt={heroImage.alt}
+              className={`blog-hero-image blog-hero-image--${heroImage.variant}`}
+            />
           )}
         </header>
 
