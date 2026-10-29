@@ -9,6 +9,8 @@ import DemaDoseVsGlide from './posts/DemaDoseVsGlide';
 import BestNoCodeAiAppBuilders from './posts/BestNoCodeAiAppBuilders';
 import SlowDaysRestaurant from './posts/SlowDaysRestaurant';
 import RestaurantLoyaltyApp from './posts/RestaurantLoyaltyApp';
+import FirstTimeVisitors from './posts/FirstTimeVisitors';
+import WhyCustomersStopComing from './posts/WhyCustomersStopComing';
 import demaDoseLogoMark from '../assets/DemaDoseLogoMark.png';
 import pancafeWelcome from '../assets/PancafeWelcome.webp';
 
@@ -20,6 +22,8 @@ const POST_BODIES = {
   'best-no-code-ai-app-builders': BestNoCodeAiAppBuilders,
   'how-to-get-customers-on-slow-days-restaurant': SlowDaysRestaurant,
   'best-restaurant-loyalty-program-uae': RestaurantLoyaltyApp,
+  'how-to-make-first-time-visitors-come-back-every-week': FirstTimeVisitors,
+  'why-customers-stop-coming-to-your-restaurant': WhyCustomersStopComing,
 };
 
 // Optional featured image shown under the hero header, per post. `variant`
