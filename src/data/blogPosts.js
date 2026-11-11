@@ -4,6 +4,7 @@
 // wired up by slug in BlogPost.jsx. Everything the shell needs generically -
 // hero, table of contents, FAQ (rendered and emitted as FAQPage schema) and
 // per-page meta tags - is data here, so the shell is the same for every post.
+
 const POSTS = [
   {
     slug: 'best-no-code-ai-app-builders',
@@ -65,8 +66,8 @@ const POSTS = [
   },
   {
     slug: 'demadose-vs-glide',
-    title: 'DemaDose vs. Glide: Best No Code App Builder in 2026?',
-    titleHighlight: 'Best No Code App Builder',
+    title: 'Best Glide Alternative for Restaurants & Food Brands in 2026: DemaDose Vs. Glide',
+    titleHighlight: 'Best Glide Alternative',
     tag: 'Tool Comparison',
     author: 'DemaDose Marketing Team',
     excerpt:
@@ -169,6 +170,207 @@ const POSTS = [
       {
         q: 'Does DemaDose take a commission on sales?',
         a: 'No. DemaDose operates as a subscription platform. You pay a fixed recurring fee and keep 100% of what you earn from sales through your app. No commission, no hidden fees, no surprises.',
+      },
+    ],
+  },
+  {
+    slug: 'how-to-get-customers-on-slow-days-restaurant',
+    title: 'How Do You Get Customers on Slow Days in Dubai?',
+    titleHighlight: 'Slow Days in Dubai',
+    tag: 'Restaurant Marketing',
+    author: 'DemaDose Marketing Team',
+    excerpt:
+      'Instagram posts get buried by the algorithm and nobody walks in. Here is how UAE restaurants fill empty tables in minutes with instant push alerts instead.',
+    subtitle:
+      'Every restaurant owner in Dubai knows the feeling of an empty dining room on a slow afternoon. Here is why social media cannot fix it, and how UAE restaurants fill their tables in just five minutes instead.',
+    publishedAt: '2026-10-13',
+    metaTitle: 'How to Get Customers on Slow Days: UAE Restaurant Guide',
+    faqId: 's5',
+    metaDescription:
+      'Struggling with quiet weekday afternoons in your Dubai cafe? Learn how to fill empty tables using instant push alerts and a direct ordering app.',
+    stats: [
+      { num: '0%', title: 'Commission on Orders', desc: 'Keep 100% of what customers pay when they order through your own app.' },
+      { num: 'Free', title: 'Push Notifications', desc: 'Alert nearby customers the instant your tables go empty, at no extra cost.' },
+      { num: '$10', title: 'Per Month', desc: 'Launch a branded ordering & loyalty app without writing a single line of code.' },
+    ],
+    toc: [
+      { id: 's1', label: 'The Slow Afternoon Problem' },
+      { id: 's2', label: "Why Can't Instagram Save a Slow Day?" },
+      { id: 's3', label: 'The Secret: Instant Push Alerts' },
+      { id: 's4', label: 'Get Your App for $10/Month' },
+      { id: 's5', label: 'FAQ' },
+      { id: 's6', label: 'The Bottom Line' },
+    ],
+    faq: [
+      {
+        q: "Why doesn't posting on Instagram fill my restaurant during slow hours?",
+        a: "Instagram's algorithm decides who sees your posts and when, so a photo posted during a slow afternoon might not reach your followers until hours later. You have no control over timing or reach, which makes it unreliable for filling empty tables right now.",
+      },
+      {
+        q: 'What is a push notification and how does it help my restaurant?',
+        a: "A push notification is an instant message sent directly to a customer's phone home screen from your own restaurant app. Unlike social media posts, you control exactly when it is seen, so you can send a Happy Hour alert the moment your dining room goes quiet and expect customers to see it within minutes.",
+      },
+      {
+        q: 'How much does it cost to launch my own restaurant app with push notifications?',
+        a: 'With DemaDose, you can launch your own branded restaurant app for $10 a month (about AED 37). You pick a ready-made template, add your logo, and your app is ready, no developers and no code required.',
+      },
+      {
+        q: 'Does DemaDose take a commission on orders placed through my app?',
+        a: 'No. DemaDose takes 0% commission. When customers order through your app, you keep 100% of the money instead of giving up 15-30% to third-party delivery platforms.',
+      },
+      {
+        q: 'Can I publish my restaurant app on the Apple App Store and Google Play?',
+        a: 'Your app can launch on Android now through Google Play. You will need a Google Developer account, which DemaDose will help you set up. iOS support is coming later.',
+      },
+    ],
+  },
+  {
+    slug: 'best-restaurant-loyalty-program-uae',
+    title: 'How Do You Turn Your Regular Diners into Loyal Customers?',
+    titleHighlight: 'Loyal Customers',
+    tag: 'Restaurant Marketing',
+    author: 'DemaDose Marketing Team',
+    excerpt:
+      'Paper punch cards get lost, forgotten, and thrown away. Here is how a digital loyalty app turns one-time diners into weekly regulars instead.',
+    subtitle:
+      'Getting a new person to try your Dubai cafe is hard work and expensive. The real challenge is making sure they come back every single week. Here is why old loyalty tricks fail and how you can turn casual diners into regulars today.',
+    publishedAt: '2026-10-14',
+    metaTitle: 'Best Restaurant Loyalty Program UAE: Turn Guests into Regulars',
+    faqId: 's4',
+    metaDescription:
+      'Paper punch cards lose money. Learn how to launch a digital restaurant loyalty program in the UAE to turn one time diners into weekly regulars.',
+    stats: [
+      { num: '0%', title: 'Commission on Orders', desc: 'Keep 100% of every order your regulars place through your own app.' },
+      { num: '3 Sec', title: 'Reorder Time', desc: 'Returning customers rebuy their favorite order with a single tap and Apple Pay.' },
+      { num: '$10', title: 'Per Month', desc: 'Launch a branded loyalty & ordering app without writing a single line of code.' },
+    ],
+    toc: [
+      { id: 's1', label: 'Why Paper Punch Cards Lose You Money' },
+      { id: 's2', label: 'How a Loyalty App Turns Diners into Regulars' },
+      { id: 's3', label: 'Launch Your Own Loyalty App for $10/Month' },
+      { id: 's4', label: 'FAQ' },
+      { id: 's5', label: 'The Bottom Line' },
+    ],
+    faq: [
+      {
+        q: 'Why do paper punch cards fail at building restaurant loyalty?',
+        a: 'Paper cards get lost in cars, left at home, or thrown out by mistake. They also give you zero information about your guest, no name, no phone number, so if a regular stops coming in, a piece of paper cannot remind them to come back.',
+      },
+      {
+        q: 'How does a mobile loyalty app keep customers coming back?',
+        a: 'A loyalty app keeps reward points on the one thing people never leave home without, their phone. It also remembers a customer\'s favorite order so they can reorder in seconds, and lets you send a free push alert to anyone who has not visited in a while.',
+      },
+      {
+        q: 'How much does it cost to launch a restaurant loyalty app with DemaDose?',
+        a: 'With DemaDose, you can launch your own ordering and loyalty app for $10 a month (about AED 37). You pick a ready-made design, add your logo and food photos, and you do not need to know how to code.',
+      },
+      {
+        q: 'Does DemaDose take a commission on orders from loyal customers?',
+        a: 'No. DemaDose takes 0% commission. Unlike big delivery apps that take up to 30% of your sales, you keep 100% of the money your regulars spend through your app.',
+      },
+      {
+        q: 'Can I automatically remind customers who haven\'t ordered in a while?',
+        a: 'Yes. If a regular diner has not visited in a couple of weeks, you can send a free push alert straight to their phone screen, like a "We miss you" offer with double points, instead of just hoping they remember you.',
+      },
+    ],
+  },
+  {
+    slug: 'how-to-make-first-time-visitors-come-back-every-week',
+    title: 'How to Make First Time Visitors Come Back Every Week?',
+    titleHighlight: 'Come Back Every Week',
+    tag: 'Restaurant Marketing',
+    author: 'DemaDose Marketing Team',
+    excerpt:
+      'A happy first visit does not guarantee a second one. Here are three simple steps UAE restaurants use to turn one time guests into weekly regulars.',
+    subtitle:
+      'Getting a guest to visit once is easy. Getting them to come back every week is how your business grows. Here is why paper cards and delivery apps fail, and the simple plan that turns first time visitors into regulars.',
+    publishedAt: '2026-10-24',
+    metaTitle: 'How to Make First Time Restaurant Visitors Come Back Every Week?',
+    faqId: 's4',
+    metaDescription:
+      'Learn how simple rewards, free phone messages, and a $10/month no code app help UAE restaurants turn one time diners into weekly regulars.',
+    stats: [
+      { num: '3', title: 'Easy Steps', desc: 'Give a treat, pick a weekly day, send a reminder, no ad spend required.' },
+      { num: '0%', title: 'Commission on Orders', desc: 'Keep 100% of your sales instead of giving up to 30% to delivery apps.' },
+      { num: '$10', title: 'Per Month', desc: 'Launch a branded loyalty & ordering app without writing a single line of code.' },
+    ],
+    toc: [
+      { id: 's1', label: 'The Old Way: Paper Cards and High Fees' },
+      { id: 's2', label: 'Three Easy Steps to Bring Guests Back' },
+      { id: 's3', label: 'Keep All Your Money With DemaDose' },
+      { id: 's4', label: 'FAQ' },
+      { id: 's5', label: 'The Bottom Line' },
+    ],
+    faq: [
+      {
+        q: 'Why do paper punch cards fail to bring first-time guests back?',
+        a: 'Most people lose paper cards in their car or the trash within days, and once the card is gone, so is the reminder. A paper card also gives you no way to reach the guest again, so if they forget, there is nothing bringing them back.',
+      },
+      {
+        q: 'How do I get a first-time guest to join my loyalty app?',
+        a: 'Put a small QR code on the table or counter and offer something immediate for scanning it, like a free drink, a sweet snack, or reward points. That turns a one-time receipt into an ongoing way to reach that guest on their phone.',
+      },
+      {
+        q: 'What is a simple way to give customers a reason to visit every week?',
+        a: 'Pick one fun, recurring day, like free extra cheese every Tuesday or double points every Thursday. People like routines, so once guests know a specific day is special at your restaurant, they plan their visit around it.',
+      },
+      {
+        q: 'How much does it cost to launch a restaurant loyalty app with DemaDose?',
+        a: 'DemaDose costs just $10 a month, about AED 37, with no hidden fees. You do not need to be a developer. You get your own branded ordering and loyalty app built for food and beverage businesses.',
+      },
+      {
+        q: 'Does DemaDose take a commission on sales?',
+        a: 'No. DemaDose takes 0% commission, so you keep 100% of your sales. Other delivery apps can take up to 30% of every order.',
+      },
+    ],
+  },
+  {
+    slug: 'why-customers-stop-coming-to-your-restaurant',
+    title: 'Why Do Customers Stop Coming to Your Dubai Restaurant?',
+    titleHighlight: 'Dubai Restaurant',
+    tag: 'Restaurant Marketing',
+    author: 'DemaDose Marketing Team',
+    excerpt:
+      'A new guest loves the meal, then never comes back. It is almost never about your food. Here are three reasons UAE diners leave, and how your own app fixes each one.',
+    subtitle:
+      'Unhappy guests will not tell you why they left. They just go to the next shop down the street. Here are three small things outside your kitchen that stop guests from returning, and how smart UAE cafes fix them with their own app.',
+    publishedAt: '2026-10-24',
+    metaTitle: 'Why Do Diners Not Come Back? 5 UAE Restaurant Mistakes',
+    faqId: 's4',
+    metaDescription:
+      'Wondering why first time guests do not return? Discover the top 5 mistakes Dubai restaurants make and how to keep diners coming back every week.',
+    stats: [
+      { num: '3', title: 'Reasons Guests Leave', desc: 'Big food app ads, wrong orders, and outdated menus all send guests to the next shop.' },
+      { num: '0%', title: 'Commission on Orders', desc: 'Keep 100% of your sales and all of your guests.' },
+      { num: '$10', title: 'Per Month', desc: 'Launch your own ordering & rewards app without writing a single line of code.' },
+    ],
+    toc: [
+      { id: 's1', label: '3 Reasons Guests Do Not Come Back' },
+      { id: 's2', label: 'How to Fix It With Your Own App' },
+      { id: 's3', label: 'Keep Your Guests With DemaDose' },
+      { id: 's4', label: 'FAQ' },
+      { id: 's5', label: 'The Bottom Line' },
+    ],
+    faq: [
+      {
+        q: 'Why do customers stop coming back even if they loved the food?',
+        a: 'It is almost never about the food itself. It comes down to small things outside the kitchen, like big food apps showing ads for competitors, staff missing an order note in a loud shop, or guests finding an outdated menu with sold out items.',
+      },
+      {
+        q: 'How do big food delivery apps cause me to lose repeat customers?',
+        a: 'When a guest opens a big food app wanting your food, the app shows them ads for several other shops first. They can click a competitor deal and buy from someone else before they ever reach your menu.',
+      },
+      {
+        q: 'How can my own app prevent wrong food orders?',
+        a: 'Instead of a guest calling in a note like "no onions" or "oat milk" that gets missed in a loud shop, your app lets them tap clear buttons such as "Extra Cheese" or "No Ice" before they pay, so your kitchen gets the right order every time.',
+      },
+      {
+        q: 'Can I hide sold out items from my menu in real time?',
+        a: 'Yes. With your own app, you can hide a sold out item in two clicks, so guests only ever see what is actually ready to eat right now instead of ordering something you ran out of hours ago.',
+      },
+      {
+        q: 'How much does it cost to launch my own restaurant app with DemaDose?',
+        a: 'DemaDose costs just $10 a month, about AED 37, with no coding required. You keep 100% of your sales since DemaDose takes 0% commission, compared to big food apps that take up to 30%.',
       },
     ],
   },
