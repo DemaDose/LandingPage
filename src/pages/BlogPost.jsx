@@ -7,6 +7,12 @@ import { getPostBySlug, formatPublishedDate } from '../data/blogPosts';
 import IncreaseCustomerLoyalty from './posts/IncreaseCustomerLoyalty';
 import DemaDoseVsGlide from './posts/DemaDoseVsGlide';
 import BestNoCodeAiAppBuilders from './posts/BestNoCodeAiAppBuilders';
+import SlowDaysRestaurant from './posts/SlowDaysRestaurant';
+import RestaurantLoyaltyApp from './posts/RestaurantLoyaltyApp';
+import FirstTimeVisitors from './posts/FirstTimeVisitors';
+import WhyCustomersStopComing from './posts/WhyCustomersStopComing';
+import demaDoseLogoMark from '../assets/DemaDoseLogoMark.png';
+import pancafeWelcome from '../assets/PancafeWelcome.webp';
 
 // Each post's prose lives in its own component; everything else on the page is
 // driven by that post's entry in src/data/blogPosts.js.
@@ -14,6 +20,17 @@ const POST_BODIES = {
   'increase-customer-loyalty-ecommerce': IncreaseCustomerLoyalty,
   'demadose-vs-glide': DemaDoseVsGlide,
   'best-no-code-ai-app-builders': BestNoCodeAiAppBuilders,
+  'how-to-get-customers-on-slow-days-restaurant': SlowDaysRestaurant,
+  'best-restaurant-loyalty-program-uae': RestaurantLoyaltyApp,
+  'how-to-make-first-time-visitors-come-back-every-week': FirstTimeVisitors,
+  'why-customers-stop-coming-to-your-restaurant': WhyCustomersStopComing,
+};
+
+// Optional featured image shown under the hero header, per post. `variant`
+// picks a size/shape modifier in Blog.css so each image keeps its own ratio.
+const HERO_IMAGES = {
+  'how-to-get-customers-on-slow-days-restaurant': { src: demaDoseLogoMark, alt: 'DemaDose app logo', variant: 'logo' },
+  'best-restaurant-loyalty-program-uae': { src: pancafeWelcome, alt: 'Pancafé loyalty app welcome screen', variant: 'phone' },
 };
 
 const AUTHOR_BIO =
@@ -59,6 +76,7 @@ const BlogPost = () => {
   const { slug } = useParams();
   const post = getPostBySlug(slug);
   const Body = POST_BODIES[slug];
+  const heroImage = HERO_IMAGES[slug];
   const [progress, setProgress] = useState(0);
   const [openFaq, setOpenFaq] = useState(null);
 
@@ -118,6 +136,13 @@ const BlogPost = () => {
               : `Published ${formatPublishedDate(post.publishedAt)}`}
           </p>
           <p className="blog-subtitle">{post.subtitle}</p>
+          {heroImage && (
+            <img
+              src={heroImage.src}
+              alt={heroImage.alt}
+              className={`blog-hero-image blog-hero-image--${heroImage.variant}`}
+            />
+          )}
         </header>
 
         {post.stats?.length > 0 && (
