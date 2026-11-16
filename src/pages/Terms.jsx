@@ -251,7 +251,7 @@ const Terms = () => {
               <h2>17. Contact Information</h2>
               <p>If you have questions about these Terms, you may contact us at:</p>
               <ul className="terms-contact-list">
-                <li><strong>Email:</strong> <a href="mailto:business.lamero@gmail.com">business.lamero@gmail.com</a></li>
+                <li><strong>Email:</strong> <a href="mailto:support@demadose.com">support@demadose.com</a></li>
                 <li><strong>Website:</strong> <a href="https://www.demadose.com/" target="_blank" rel="noopener noreferrer">demadose.com</a></li>
                 <li><strong>Location:</strong> Amman, Jordan</li>
               </ul>

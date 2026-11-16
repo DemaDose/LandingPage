@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Footer.css';
 import { goToSection } from '../utils/sectionLink';
 
-const CONTACT_EMAIL = 'demadose.business@gmail.com';
+const CONTACT_EMAIL = 'support@demadose.com';
 
 const Footer = () => {
   const location = useLocation();
