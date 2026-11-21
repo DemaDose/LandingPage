@@ -207,7 +207,7 @@ const Privacy = () => {
               <h2>14. Contact Us</h2>
               <p>If you have questions about this Privacy Policy, you may contact us at:</p>
               <ul className="privacy-contact-list">
-                <li><strong>Email:</strong> <a href="mailto:business.lamero@gmail.com">business.lamero@gmail.com</a></li>
+                <li><strong>Email:</strong> <a href="mailto:support@demadose.com">support@demadose.com</a></li>
                 <li><strong>Location:</strong> Amman, Jordan</li>
                 <li><strong>Website:</strong> <a href="https://www.demadose.com/" target="_blank" rel="noopener noreferrer">demadose.com</a></li>
               </ul>
