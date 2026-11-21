@@ -39,7 +39,7 @@ const Careers = () => {
       <main className="careers-main">
         <section className="careers-section">
           <div className="careers-container">
-            <h1 className="careers-title">Careers at DemaDose</h1>
+            <h1 className="careers-title">Careers that matter at DemaDose</h1>
             <p className="careers-intro">
               Join us in making powerful app experiences affordable for every brand.
             </p>
